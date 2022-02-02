@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ticket aide</title>
+  </head>
+  <body>
+    <div class="bordpage">
+      <div class="titre">
+        Distributeur de ticket pour la promo&nbsp;
+        <p style="font-size: 40px">&#127915;</p>
+      </div>
+      <div class="soustitre">
+        <p style="font-size: 40px">&#128125;</p>
+        &nbsp;Ici c'est comme à la poissonnerie&nbsp;
+        <p style="font-size: 40px">&#128032;</p>
+        , il faut faire la queue !
+      </div>
+      <div class="inscription">
+        <label for="text">Ton nom :</label>
+        <input id="text" type="text" />
+        <button class="buttonaide">
+          Je veux de l'aide !&nbsp;
+          <span style="font-size: 16px">&#x1F44B;</span>
+        </button>
+      </div>
+      <div class="soustitre">listes des apprenant.e.s</div>
+      <div class="inscription">
+        <button class="buttonaide">
+          Au suivant !&nbsp;
+          <span style="font-size: 16px">&#x27A1;</span>
+        </button>
+        <button class="buttonaide">
+          Rafraichir la liste !
+          <span style="font-size: 16px">&#x1F503;</span>
+        </button>
+      </div>
+      <div class="tableau">
+        <div>Nom</div>
+        <div>Date</div>
+        <div>Passe mon tour</div>
+        <div>olivier</div>
+        <div>
+          <script language="JavaScript">
+            var maintenant = new Date();
+            let day = maintenant.getDate();
+            let mois = maintenant.getMonth();
+            var annee = maintenant.getFullYear();
+
+            document.write(day, "/", mois);
+          </script>
+        </div>
+        <div>
+          <button class="buttonpasse">Je passe mon tour</button>
+        </div>
+        <div>olivier</div>
+        <div>
+          <script language="JavaScript">
+            var maintenant = new Date();
+            let day = maintenant.getDate();
+            let mois = maintenant.getMonth();
+            var annee = maintenant.getFullYear();
+
+            document.write(day, "/", mois);
+          </script>
+        </div>
+        <div>
+          <button class="buttonpasse">Je passe mon tour</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
