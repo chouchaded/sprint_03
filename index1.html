@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles1.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Ticket aide</title>
-	</head>
-	<body>
-		<div class="bordpage">
-			<div class="titre">
-				Distributeur de ticket pour la promo&nbsp;
-				<p style="font-size: 40px">&#127915;</p>
-			</div>
-			<div class="soustitre">
-				<p style="font-size: 40px">&#128125;</p>
-				&nbsp;Ici c'est comme à la poissonnerie&nbsp;
-				<p style="font-size: 40px">&#128032;</p>
-				, il faut faire la queue !
-			</div>
-			<div class="inscription">
-				<form method="get">
-					<label for="name">Ton nom: </label>
-					<input
-						type="text"
-						id="userInput"
-						aria-label="Recipient's username"
-						aria-describedby="basic-addon2"
-					/><button class="buttonaide" type="button" onClick="addUserInfo()">
-						Je veux de l'aide !&nbsp;
-						<span style="font-size: 16px">&#x1F44B;</span>
-					</button>
-				</form>
-			</div>
-			<div class="soustitre">listes des apprenant.e.s</div>
-			<div class="inscription">
-				<button class="buttonaide">
-					Au suivant !&nbsp;
-					<span style="font-size: 16px">&#x27A1;</span>
-				</button>
-				<button class="buttonaide">
-					Rafraichir la liste !
-					<span style="font-size: 16px">&#x1F503;</span>
-				</button>
-			</div>
-			<div class="tableau">
-				<div>Nom</div>
-				<div>Date</div>
-				<div>Passe mon tour</div>
-			</div>
-			<div id="display"></div>
-		</div>
-		<script type="text/javascript" src="script1.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ticket aide</title>
+  </head>
+  <body>
+    <div class="bordpage">
+      <div class="titre">
+        Distributeur de ticket pour la promo&nbsp;
+        <p style="font-size: 40px">&#127915;</p>
+      </div>
+      <div class="soustitre">
+        <p style="font-size: 40px">&#128125;</p>
+        &nbsp;Ici c'est comme à la poissonnerie&nbsp;
+        <p style="font-size: 40px">&#128032;</p>
+        , il faut faire la queue !
+      </div>
+      <div class="inscription">
+        <form method="get">
+          <label for="name">Ton nom: </label>
+          <input type="text" id="userInput" /><button
+            class="buttonaide"
+            type="button"
+            onclick="ajoutnom()"
+          >
+            Je veux de l'aide !&nbsp;
+            <span style="font-size: 16px">&#x1F44B;</span>
+          </button>
+        </form>
+      </div>
+      <div class="soustitre">listes des apprenant.e.s</div>
+      <div class="inscription">
+        <button class="buttonaide" id="ausuivant" onclick="suivant()">
+          Au suivant !&nbsp;
+          <span style="font-size: 16px">&#x27A1;</span>
+        </button>
+        <button class="buttonaide">
+          Rafraichir la liste !
+          <span style="font-size: 16px">&#x1F503;</span>
+        </button>
+      </div>
+      <div class="tableau">
+        <div>Nom</div>
+        <div>Date</div>
+        <div>Passe mon tour</div>
+      </div>
+      <div  id="display"></div>
+    <script type="text/javascript" src="script2.js"></script>
+  </body>
 </html>

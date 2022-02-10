@@ -1,128 +1,134 @@
 body {
-	margin: 0;
+  margin: 0;
 }
 
 .bordpage {
-	display: flex;
+  display: flex;
 
-	align-items: center;
-	flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 
-	border: 4px;
-	border-color: black;
-	border-style: dashed;
-	margin: 10px;
-	border-top: none;
+  border: 4px;
+  border-color: black;
+  border-style: dashed;
+  margin: 10px;
+  border-top: none;
 }
 
 .titre {
-	font-family: "Roboto Mono", monospace;
-	font-weight: 600;
-	font-size: 40px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  font-size: 40px;
 
-	display: flex;
-	margin: auto;
-	margin-top: 20px;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
 
-	background-color: #ffb703;
-	width: 1100px;
-	height: 100px;
+  background-color: #ffb703;
+  width: 1100px;
+  height: 100px;
 
-	color: #000000;
+  color: #000000;
 }
 
 .soustitre {
-	font-family: "Roboto Mono", monospace;
-	font-weight: 600;
-	font-size: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  font-size: 20px;
 
-	display: flex;
-	margin: auto;
-	margin-top: 30px;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
 
-	background-color: #8ecae6;
-	width: 1100px;
-	height: 60px;
+  background-color: #8ecae6;
+  width: 1100px;
+  height: 60px;
 
-	color: #000000;
+  color: #000000;
 }
 
 .buttonaide {
-	border: none;
-	font-family: Arial, Helvetica, sans-serif;
-	font-style: normal;
-	font-weight: bold;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
 
-	background-color: #023047;
+  background-color: #023047;
 
-	border-radius: 3px;
+  border-radius: 3px;
 
-	color: #ffffff;
-	padding: 5px;
+  color: #ffffff;
+  padding: 5px;
 
-	text-align: center;
-	font-size: 16px;
+  text-align: center;
+  font-size: 16px;
 
-	cursor: pointer;
+  cursor: pointer;
 
-	margin-left: 40px;
+  margin-left: 40px;
 }
 
 #text {
-	margin-left: 50px;
-	font-family: Arial, Helvetica, sans-serif;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .inscription {
-	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 
-	display: flex;
-	margin: auto;
-	margin-top: 30px;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
 
-	width: 1100px;
-	height: 60px;
+  width: 1100px;
+  height: 60px;
 
-	color: #000000;
+  color: #000000;
 }
 
 .tableau {
-	display: grid;
-	grid-template-columns: 200px 350px 200px;
-	grid-column: 100px;
-	margin: 0px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	text-align: center;
+  display: grid;
+  grid-template-columns: 200px 350px 200px;
+  grid-column: 100px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
 }
 .tableau > div {
-	border: solid 1px black;
-	margin: 0;
-	padding: 5px;
+  border: solid 1px black;
+  margin: 0;
+  padding: 5px;
 }
 
 .buttonpasse {
-	border: none;
-	font-family: Arial, Helvetica, sans-serif;
-	font-style: normal;
-	font-weight: bold;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
 
-	background-color: #fb8500;
+  background-color: #fb8500;
 
-	border-radius: 3px;
+  border-radius: 3px;
 
-	color: #ffffff;
-	padding: 5px;
+  color: #ffffff;
+  padding: 5px;
 
-	text-align: center;
-	font-size: 16px;
+  text-align: center;
+  font-size: 16px;
 
-	cursor: pointer;
+  cursor: pointer;
+}
+.passe_tour {
+  background-color: rgb(30, 255, 0);
+}
+.stephane {
+  background-color: green;
 }

@@ -35,13 +35,49 @@ let liste = [];
 function ajoutnom() {
   let nom = document.getElementById("userInput").value;
   if (nom != "") {
-    liste.push([nom, afficheDate()]);
+    liste.push([
+      "<div>",
+      nom,
+      afficheDate(),
+      '<button class="buttonpasse" onclick="fondgris()" >Je passe mon tour !</button>',
+      "</div>",
+    ]);
     console.log("nom", nom);
   }
-  let affichnom = liste[0];
-  let affichdate = liste[1];
+  console.log("liste", liste);
+  console.log("liste.toString()", liste.toString());
 
+  // <div>,a,10/02/2022, 14:38:41,<button class="buttonpasse" onclick="fondgris()" >Je passe mon tour !</button>,</div>
+  // <div>a 10/02/2022, 14:38:41<button class="buttonpasse" onclick="fondgris()" >Je passe mon tour !</button></div>
+
+  for (let i = 0; i < liste.length; ++i) {
+    const elt = liste[i];
+    console.log("elt", elt);
+
+    document.getElementById("display").innerHTML = elt;
+  }
   document.getElementById("userInput").value = null;
   document.getElementById("display").innerHTML = liste;
+
+  // console.log("Liste", liste);
 }
-console.log("liste", liste);
+
+function fondgris() {
+  document.getElementById("display").style.background = "grey";
+}
+
+function suivant() {
+  let premier = liste[0];
+  console.log("premier", premier);
+
+  document.getElementById("display").style.background = "green";
+  console.log(
+    "document.getElementById(display)",
+    document.getElementById("display")
+  );
+  console.dir(document.getElementById("display"));
+}
+
+// console.log("fongris", fondgris);
+
+// console.log("liste", liste);
