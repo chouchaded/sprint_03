@@ -36,11 +36,10 @@ function ajoutnom() {
   let nom = document.getElementById("userInput").value;
   if (nom != "") {
     liste.push([
-      "<div>",
+      '<div class="tableau">',
       nom,
       afficheDate(),
-      '<button class="buttonpasse" onclick="fondgris()" >Je passe mon tour !</button>',
-      "</div>",
+      '<button class="buttonpasse" onclick="fondgris()" >Je passe mon tour !</button></div>',
     ]);
     console.log("nom", nom);
   }
