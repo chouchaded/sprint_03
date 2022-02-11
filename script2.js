@@ -1,3 +1,7 @@
+// Script du Sprint 03
+
+// Fonction création de la date
+
 function afficheDate() {
   var d = new Date();
   var jour = d.getDate();
@@ -30,7 +34,12 @@ function afficheDate() {
   return fullDate;
 }
 
+// Déclaration du tableau "Liste"
+
 let liste = [];
+
+// Fonction ajouter nom dans le tableau +
+//   affichage du tableau
 
 function ajoutnom() {
   let nom = document.getElementById("userInput").value;
@@ -57,13 +66,15 @@ function ajoutnom() {
   }
   document.getElementById("userInput").value = null;
   document.getElementById("display").innerHTML = liste;
-
-  // console.log("Liste", liste);
 }
+
+// Fonction changement du style "Je passe mon tour"
 
 function fondgris() {
   document.getElementById("display").style.background = "grey";
 }
+
+// Fonction changement du style "au suisvant"
 
 function suivant() {
   let premier = liste[0];
@@ -76,7 +87,3 @@ function suivant() {
   );
   console.dir(document.getElementById("display"));
 }
-
-// console.log("fongris", fondgris);
-
-// console.log("liste", liste);
